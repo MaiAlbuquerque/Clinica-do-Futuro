@@ -1,0 +1,277 @@
+
+body, main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+  }
+
+
+  header{
+    background-color: #608BA6;
+    width: 100%;
+  }
+
+  .imglogo{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img{
+
+    width: 30%;
+  }
+
+  
+  .imagem-de-fundo { 
+
+    background-image:url('./imagem/banner-medico-com-medico-usando-oculos.jpg');
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a div */
+    background-position: center; /* Centraliza a imagem na div */
+    height: 550px; /* Ajuste a altura conforme necessário */
+    width:100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 56px;
+    color: white; /* Cor do texto sobreposto */
+    text-align: left;
+  }
+  
+  .imagem-de-fundo h1 {
+
+    margin-right: 106px;
+    margin-top: 123px;
+    padding: 5px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+    line-height: 108px;
+    
+  }
+
+  .bloco{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.blocotexto{
+  flex: 0 0 40%; /* Ocupa 48% da largura disponível */
+  max-width: 40%;
+
+}
+  .intro{
+     background-color: rgb(255, 255, 255);
+     display: block;
+     justify-content: center;
+     text-align: start ;
+     margin-left: 60px;
+  }
+  .intro h1 {
+    font-family: 'Bebas Neue', sans-serif;;
+    color: black;
+    font-size: 79px;
+    margin-top: 55px;
+    margin-bottom: 35px;
+    margin-left: 50px;
+
+  }
+
+  .intro p {
+    
+    font-size: 25px;
+    margin-top: 15px;
+    margin-left: 50px;
+    font-family: 'Roboto', sans-serif;
+
+  }
+  .formulario {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 100%;
+    margin-left: 99px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  input {
+    padding: 17px;
+    margin-bottom: 10px;
+    margin-top: 5x;
+    border: 1px solid rgba(182, 214, 242, 0.45); /* B6D6F2 com 45% de transparência */
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: rgba(182, 214, 242, 0.45); /* B6D6F2 com 45% de transparência */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+    cursor: pointer;
+    margin-top: 25px ;
+    padding: 20px;
+    border: none;
+    
+  }
+  
+  button:hover {
+    background-color: rgba(182, 214, 242, 0.6); /* Cor um pouco mais intensa ao passar o mouse */
+  }
+
+.intro { flex: 0 0 10%; /* Ocupa 48% da largura disponível */
+  max-width: 100%; /* Define a largura máxima como 48% para garantir o layout desejado */
+   
+}
+
+.blocoimg {
+
+    flex: 0 0 100%; 
+    max-width: 44%;
+    height: 92%;
+   margin-top: 55px;
+   margin-right: 55px;
+   margin-bottom: 35px;
+}
+
+
+.img2 {
+    width: 100%;
+    height: 100%;
+}
+
+.contato{
+
+  background-color: #608BA6;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  text-align: center;
+  padding:10px;
+  color: white;
+
+}
+
+.contatotexto h1{
+
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.contatotexto p {
+
+  font-size: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+  body, main {
+      width: 100%;
+  }
+
+  .bloco, .blocotexto, .blocoimg {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+  .formulario {
+      margin-left: 86px;
+      max-width: 822px;
+  }
+      
+
+  .imagem-de-fundo {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+  }
+
+  .imagem-de-fundo h1 {
+      margin-right: 0;
+      margin-top: 20px; /* Exemplo de ajuste para melhor legibilidade */
+      line-height: normal; /* Restaura a altura normal da linha */
+  }
+
+  .intro{
+    background-color: rgb(255, 255, 255);
+    display: block;
+    justify-content: center;
+    text-align: start ;
+    margin-left: 10px;
+ }
+   .contato{
+     padding: 6px;
+     margin-top: 10px;
+    width: 1012px;
+ }
+  .img2{
+   width: 1012px;
+   height: 1200px;
+   padding: 4px;
+
+  }
+
+  @media screen and (max-width: 800px) {
+    body, main {
+        width: 100%;
+    }
+
+    .header{
+      width: 792px;
+    }
+
+    .bloco, .blocotexto, .blocoimg {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .formulario {
+        margin-left: 15px;
+        width: 600px;
+        padding: 51px;
+    }
+    .img2{
+      width: 792px;
+      height: 900px;
+    }
+    .imagem-de-fundo {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .imagem-de-fundo h1 {
+        margin-right: 0;
+        margin-top: 20px; /* Exemplo de ajuste para melhor legibilidade */
+        line-height: normal; /* Restaura a altura normal da linha */
+    }
+
+    /* Exemplo de ajuste para a imagem no cabeçalho */
+    .imglogo img {
+        width: 50%;
+    }
+
+    .contato {
+
+      width: 792px;
+    }
+    
+    .intro p{
+
+      margin-right: 25px;
+    }
+   
+}
+}
