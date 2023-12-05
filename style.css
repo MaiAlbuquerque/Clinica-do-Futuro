@@ -59,16 +59,17 @@ body, main {
 }
 
 .blocotexto{
-  flex: 0 0 40%; /* Ocupa 48% da largura disponível */
-  max-width: 40%;
+ 
+  max-width: 100%;
 
 }
   .intro{
+     flex: 0 0 10%; /* Ocupa 48% da largura disponível */
+     max-width: 100%; /* Define a largura máxima como 48% para garantir o layout desejado */
      background-color: rgb(255, 255, 255);
-     display: block;
      justify-content: center;
      text-align: start ;
-     margin-left: 60px;
+     margin-left: 40px;
   }
   .intro h1 {
     font-family: 'Bebas Neue', sans-serif;;
@@ -76,7 +77,8 @@ body, main {
     font-size: 79px;
     margin-top: 55px;
     margin-bottom: 35px;
-    margin-left: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
 
   }
 
@@ -84,32 +86,37 @@ body, main {
     
     font-size: 25px;
     margin-top: 15px;
-    margin-left: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
     font-family: 'Roboto', sans-serif;
 
   }
   .formulario {
     background-color: #ffffff;
     padding: 20px;
-    width: 100%;
-    margin-left: 99px;
+    width: 700%;
+    height: 950px;
+    margin-left: 60px;
   }
   
   form {
     display: flex;
     flex-direction: column;
+    height: 900px;
   }
   
   label {
-    margin-bottom: 10px;
+    margin-bottom: 18px;
+    padding-left: 0px;
+    padding: 21px;
     font-size: 25px;
     font-family: 'Roboto', sans-serif;
   }
   
   input {
-    padding: 17px;
+    padding: 20px;
     margin-bottom: 10px;
-    margin-top: 5x;
+    margin-top: 10px;
     border: 1px solid rgba(182, 214, 242, 0.45); /* B6D6F2 com 45% de transparência */
     border-radius: 5px;
   }
@@ -118,8 +125,8 @@ body, main {
     background-color: rgba(182, 214, 242, 0.45); /* B6D6F2 com 45% de transparência */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
     cursor: pointer;
-    margin-top: 25px ;
-    padding: 20px;
+    margin-top: 100px ;
+    padding: 30px;
     border: none;
     
   }
@@ -128,31 +135,34 @@ body, main {
     background-color: rgba(182, 214, 242, 0.6); /* Cor um pouco mais intensa ao passar o mouse */
   }
 
-.intro { flex: 0 0 10%; /* Ocupa 48% da largura disponível */
-  max-width: 100%; /* Define a largura máxima como 48% para garantir o layout desejado */
-   
-}
-
 .blocoimg {
 
-    flex: 0 0 100%; 
-    max-width: 44%;
-    height: 92%;
-   margin-top: 55px;
-   margin-right: 55px;
-   margin-bottom: 35px;
+   display: flex;
+  justify-content: center;
+  margin-right: 40px;
+   max-width: 100%;
+   height: 100%;
+  
 }
 
+picture{
+  width: 100%;
+  height: 871px;
+
+}
 
 .img2 {
-    width: 100%;
-    height: 100%;
+
+ width: auto;
+ height: 100%;
+
 }
+
 
 .contato{
 
   background-color: #608BA6;
-  width: 100%;
+  width: 98.5%;
   font-family: 'Roboto', sans-serif;
   display: block;
   text-align: center;
@@ -171,107 +181,100 @@ body, main {
 
   font-size: 15px;
 }
+ 
+   /* Telas de android Grande */
 
-@media screen and (max-width: 1024px) {
-  body, main {
-      width: 100%;
-  }
-
-  .bloco, .blocotexto, .blocoimg {
-      flex: 0 0 100%;
-      max-width: 100%;
-      margin-left: 0;
-      margin-right: 0;
-  }
-
-  .formulario {
-      margin-left: 86px;
-      max-width: 822px;
-  }
-      
-
-  .imagem-de-fundo {
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-  }
-
-  .imagem-de-fundo h1 {
-      margin-right: 0;
-      margin-top: 20px; /* Exemplo de ajuste para melhor legibilidade */
-      line-height: normal; /* Restaura a altura normal da linha */
-  }
-
-  .intro{
-    background-color: rgb(255, 255, 255);
-    display: block;
-    justify-content: center;
-    text-align: start ;
-    margin-left: 10px;
- }
-   .contato{
-     padding: 6px;
-     margin-top: 10px;
-    width: 1012px;
- }
-  .img2{
-   width: 1012px;
-   height: 1200px;
-   padding: 4px;
-
-  }
-
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 360px) {
+   
     body, main {
         width: 100%;
     }
 
     .header{
-      width: 792px;
+      width: 352px;
     }
 
-    .bloco, .blocotexto, .blocoimg {
+    
+    .imglogo img {
+      width: 50%;
+  }
+
+    
+    .imagem-de-fundo {
+      height: 50%;
+      
+    }
+
+    .imagem-de-fundo h1{
+       
+      font-size: 60px;
+      margin-right: 20px;
+      line-height: 1.2;
+    }
+
+    .bloco, .blocotexto{
         flex: 0 0 100%;
         max-width: 100%;
         margin-left: 0;
         margin-right: 0;
     }
 
+    .intro{
+
+      margin-left: 17px;
+    }
+    .intro h1{
+
+      font-size: 64px;
+      margin-bottom: 5px; 
+      margin-right: 15px;
+      margin-top: 10px;
+      margin-left: 15px;
+      padding: 15px;
+    }
+
+    .intro p{
+      font-size: 20px;
+      margin-top: 5px;
+      margin-right: 15px;
+      margin-left: 15px;
+      padding: 10px;
+    }
+
     .formulario {
+
         margin-left: 15px;
-        width: 600px;
-        padding: 51px;
+        width: 300px;
+          
     }
+
+     .formulario label{
+
+      font-size: 18px;
+    }
+   
+
+    .blocoimg{
+
+      display: block;
+      max-width: 352px;
+      margin: 0px;
+
+    }
+
     .img2{
-      width: 792px;
-      height: 900px;
-    }
-    .imagem-de-fundo {
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
 
-    .imagem-de-fundo h1 {
-        margin-right: 0;
-        margin-top: 20px; /* Exemplo de ajuste para melhor legibilidade */
-        line-height: normal; /* Restaura a altura normal da linha */
-    }
+      width: 100%;
 
-    /* Exemplo de ajuste para a imagem no cabeçalho */
-    .imglogo img {
-        width: 50%;
     }
 
     .contato {
 
-      width: 792px;
+      width: 330px;
+      margin-top: -6px;
+      padding-top: 5px;
     }
     
-    .intro p{
-
-      margin-right: 25px;
-    }
+    
    
-}
 }
