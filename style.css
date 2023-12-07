@@ -4,6 +4,7 @@ body, main {
     padding: 0;
     box-sizing: border-box;
    
+   
   }
 
 
@@ -174,7 +175,7 @@ picture{
 .contatotexto h1{
 
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 400px;
 }
 
 .contatotexto p {
@@ -184,10 +185,11 @@ picture{
  
    /* Telas de android Grande */
 
-  @media screen and (max-width: 360px) {
+   @media screen and (max-width: 360px) {
    
     body, main {
         width: 100%;
+        
     }
 
     .header{
@@ -201,18 +203,19 @@ picture{
 
     
     .imagem-de-fundo {
-      height: 50%;
+      height: 349px;
       
     }
 
     .imagem-de-fundo h1{
        
-      font-size: 60px;
+      font-size: 40px;
       margin-right: 20px;
       line-height: 1.2;
     }
 
     .bloco, .blocotexto{
+
         flex: 0 0 100%;
         max-width: 100%;
         margin-left: 0;
@@ -243,38 +246,202 @@ picture{
 
     .formulario {
 
-        margin-left: 15px;
-        width: 300px;
-          
+        margin-left: 8px;
+        margin-right: 10px;
+        margin-top: 69px;
+        width: 335px;
+        height: 400px;
+               
     }
 
-     .formulario label{
+    form {
+       
+    height: 400px;
+    margin-left: -34px;
+    margin-right: 10px;
+
+    }
+
+     .formulario label {
 
       font-size: 18px;
+      margin-left: 10px;
+      
     }
    
 
-    .blocoimg{
+    .blocoimg {
 
       display: block;
-      max-width: 352px;
-      margin: 0px;
+      max-width: 335px;
+      height: 492px;
+      margin-top: 20px;
+      margin-bottom: 100px;
+      margin-left: 10px;
+      margin-right: 10px;
+
+    }    
+    
+    button{
+    
+    margin-top: 39px;
+   
 
     }
 
-    .img2{
+    input{
 
-      width: 100%;
-
+      padding: 20px;
+      margin-bottom: 28px;
+      margin-left: 10px;
     }
+
+    picture{
+
+      display: none;
+    }
+
 
     .contato {
 
-      width: 330px;
+      width: 340px;
       margin-top: -6px;
-      padding-top: 5px;
+      padding: 12px;
     }
-    
-    
-   
+     
 }
+
+@media screen and (max-width: 426px) {
+
+  .intro p{
+
+    margin-left: 26px;
+  }
+  .imagem-de-fundo {
+    height: 385px;
+  }
+
+  .imagem-de-fundo h1 {
+   
+    font-size: 83px;
+    line-height: 76px;
+    margin-right: 56px;
+    margin-top: 79px;
+}
+  .blocoimg {
+
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    max-width: 100%;
+    
+  }
+
+  button {
+
+    margin-top: 58px;
+  }
+
+
+  .formulario{
+
+    width: 300px;
+    height: 850px;
+    margin-left: 44px;
+
+  }
+
+  form{
+    height: 500px;
+ }
+
+  label{
+
+    padding: 12px 0;
+  }
+
+  input {
+
+  padding: 18px 0;
+
+  }
+
+  picture{
+    
+      margin-left: 10px;
+      margin-right: 10px;
+      width: 300px;
+      height: 871px;
+  }
+
+  .img2{
+
+    width: 400px;
+    height: 600px;
+
+  }
+
+  .contato{
+
+    padding: 3px;
+  }
+
+}
+
+@media screen and (max-width: 1000px)  {
+
+  .img2{
+
+    width: 100%;
+    height: 91%;
+
+  }
+
+  .intro p {
+
+  text-align: justify;
+  }
+
+  .formulario {
+
+    width: 76%;
+    height: 576px;
+    margin-top: -27px;
+  }
+
+  label {
+    margin-bottom: 11px;
+    padding-left: 0px;
+    padding: 6px;
+    font-size: 21px;
+  }
+
+  input {
+    padding: 9px;
+    margin-bottom: 13px;
+    margin-top: 0px;}
+
+  button{
+
+    margin-top: 126px;
+    padding: 20px;
+
+  }
+
+  picture {
+    width: 100%;
+    height: 626px;
+  } 
+
+  .imagem-de-fundo {
+
+    height: 458px
+  }
+
+  .contato {
+
+    padding: 5px;
+  }
+
+} 
+
